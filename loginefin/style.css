@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  background-image: url(img/finger.jpg);
+  /* background-image: url(img/finger.jpg); */
   background-size: 100%;
 }
 
