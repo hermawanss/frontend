@@ -15,8 +15,8 @@ body {
   /* background-color: #fff; */
   /* background-image: url(img/finger.jpg); */
   /* background-size: 100%; */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url(img/Untitled-3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(img/finger1.jpg);
   background-size: cover;
 }
 
@@ -68,15 +68,6 @@ body {
 
 .container.active .forms {
   height: 350px;
-}
-
-.forms .img .logo-bolmut {
-  margin-top: -30px;
-  margin-left: 315px;
-  max-width: 55px;
-  /* background-color: red; */
-  display: flex;
-  object-fit: cover;
 }
 
 .container .form .title {
@@ -204,4 +195,21 @@ body {
 .form .login-signup {
   margin-top: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 375px;
+    width: 350px;
+    width: 330px;
+  }
+  /* .form {
+    width: 360px;
+  } */
+
+  .logo-bolmut {
+    width: 375px;
+    width: 350px;
+    width: 330px;
+  }
 }
