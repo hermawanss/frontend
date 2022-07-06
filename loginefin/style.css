@@ -16,7 +16,7 @@ body {
   /* background-image: url(img/finger.jpg); */
   /* background-size: 100%; */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(img/finger1.jpg);
+    url(img/Untitled-1.jpg);
   background-size: cover;
 }
 
@@ -126,7 +126,7 @@ body {
   font-size: 23px;
 }
 
-.input-field input:is(:focus, :valid) ~ i {
+.input-field input:is(:focus, :valid)~i {
   color: #4070f4;
 }
 
@@ -203,6 +203,7 @@ body {
     width: 350px;
     width: 330px;
   }
+
   /* .form {
     width: 360px;
   } */
