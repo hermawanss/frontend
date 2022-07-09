@@ -15,7 +15,7 @@ body {
   /* background-color: #fff; */
   /* background-image: url(img/finger.jpg); */
   /* background-size: 100%; */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url(img/finger1.jpg);
   background-size: cover;
 }
@@ -30,8 +30,8 @@ body {
   overflow: hidden;
   /* coba */
   /* z-index: 999; */
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 1.5px -1.5px 28px 7px rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 1.1px -1.1px 28px 1px rgba(0, 0, 0, 0.7);
 }
 
 .container .forms {
@@ -97,11 +97,11 @@ body {
 }
 
 .form .input-field ::placeholder {
-  color: #b6b6b6;
+  color: #ffffff;
 }
 
 .input-field input {
-  color: #fff;
+  color: #fafafa;
   background: none;
   opacity: 90%;
   position: absolute;
@@ -111,7 +111,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #fafafa;
   /* border-radius: 6px; */
   /* border-top: 2px solid transparent; */
   transition: all 0.2s ease;
@@ -126,11 +126,11 @@ body {
   padding-left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #b6b6b6;
+  color: #fafafa;
   font-size: 23px;
 }
 
-.input-field input:is(:focus, :valid)~i {
+.input-field input:is(:focus, :valid) ~ i {
   color: #4070f4;
 }
 
