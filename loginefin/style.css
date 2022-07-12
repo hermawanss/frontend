@@ -37,7 +37,7 @@ body {
 .container .forms {
   display: flex;
   align-items: center;
-  height: 350px;
+  height: 330px;
   width: 200%;
   /* background-color: red; */
   transition: height 0.2s ease;
@@ -187,7 +187,7 @@ body {
 }
 
 .form .button {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .form .button input {
