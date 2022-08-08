@@ -16,7 +16,7 @@ body {
   /* background-image: url(img/finger.jpg); */
   /* background-size: 100%; */
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(/img/finger1.jpg);
+    url(img/finger1.jpg);
   background-size: cover;
 }
 
@@ -47,10 +47,10 @@ body {
 .container .swiper-slide img {
   position: absolute;
   /* object-fit: cover; */
-  height: 520px;
-  width: 90%;
+  height: 521px;
+  width: 90.1%;
   left: 12px;
-  top: 27px;
+  top: 26px;
 }
 
 .container .img-mokap img {
