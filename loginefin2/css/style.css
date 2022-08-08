@@ -16,7 +16,7 @@ body {
   /* background-image: url(img/finger.jpg); */
   /* background-size: 100%; */
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(/assets/img/finger1.jpg);
+    url(/img/finger1.jpg);
   background-size: cover;
 }
 
@@ -286,7 +286,7 @@ a.apss .apss-img {
   height: 40px;
   width: 150px;
   /* left: 1px; */
-  transform: translate(30%);
+  transform: translate(25%);
   /* color: #0171d3; */
   /* font-size: 20px; */
   /* border-radius: 50%; */
@@ -301,7 +301,7 @@ a.play .play-img {
   height: 40px;
   width: 150px;
   /* right: 1px; */
-  transform: translate(10%);
+  transform: translate(5%);
   /* color: #0171d3; */
   /* font-size: 20px; */
   /* border-radius: 50%; */
@@ -339,7 +339,7 @@ a.play .play-img {
 @media screen and (max-width: 850px) {
   body {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-      url(/assets/img/finger1.jpg);
+      url(/img/finger1.jpg);
     background-size: cover;
   }
 
