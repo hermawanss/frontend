@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+  /* background-image: url(img/finger.jpg); */
+  /* background-size: 100%; */
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(/assets/img/finger1.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  /* max-width: 400px; */
+  width: 400px;
+  /* background: #fff; */
+  border-radius: 15px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+  /* overflow: hidden; */
+  /* coba */
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 1.1px -1.1px 28px 1px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+}
+
+.container .swiper {
+  position: absolute;
+  display: flex;
+  height: 125%;
+  /* background: rgb(245, 0, 0); */
+  width: 270px;
+  top: -60px;
+  left: 450px;
+}
+
+.container .swiper-slide img {
+  position: absolute;
+  /* object-fit: cover; */
+  height: 520px;
+  width: 90%;
+  left: 12px;
+  top: 27px;
+}
+
+.container .img-mokap img {
+  position: absolute;
+  height: 560px;
+  display: flex;
+  object-fit: cover;
+}
+
+
+.container .forms {
+  position: relative;
+  /* display: flex; */
+  align-items: center;
+  /* height: 350px; */
+  /* width: 200%; */
+  /* background-color: red; */
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  width: 100%;
+  padding: 20px;
+  transition: margin-left 0.18s ease;
+}
+
+.container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #4070f4;
+  border-radius: 25px;
+}
+
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  /* background-color: red; */
+}
+
+.form .input-field ::placeholder {
+  color: #fff;
+}
+
+.input-field input {
+  color: #fff;
+  background: none;
+  opacity: 90%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 45px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
+  /* border-radius: 6px; */
+  /* border-top: 2px solid transparent; */
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #4070f4;
+}
+
+.input-field i {
+  position: absolute;
+  padding-left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid)~i {
+  color: #4070f4;
+}
+
+.input-field i.icon {
+  left: 0;
+}
+
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form .checkbox-text {
+  /* background-color: red; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input {
+  margin: 0 8px 1.5px 4px;
+  accent-color: #4070f4;
+}
+
+.form .text {
+  color: rgb(212, 212, 212);
+  font-size: 14px;
+}
+
+.form a.text {
+  text-decoration: none;
+  color: #4070f4;
+}
+
+.form a.forgot {
+  text-decoration: none;
+  color: #4070f4;
+}
+
+.form a.forgot:hover {
+  /* text-decoration: none; */
+  color: #cacaca;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form .button {
+  margin-top: 13px;
+}
+
+.form .button input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input:hover {
+  background-color: #265df2;
+}
+
+.form .login-signup {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.forms .line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+.forms .line::before {
+  font-weight: 200;
+  content: "Temukan Di";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form .text-bawah {
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* a.play {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  height: 55px;
+  border-radius: 6px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+} */
+
+/* a.play:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+} */
+
+/* .play span {
+  color: #265df2;
+}
+
+a.play:hover {
+  text-decoration: none;
+} */
+
+.forms .media {
+  display: flex;
+
+  /* background: #000; */
+}
+
+a.apss .apss-img {
+  /* position: relative; */
+  height: 40px;
+  width: 150px;
+  /* left: 1px; */
+  transform: translate(30%);
+  /* color: #0171d3; */
+  /* font-size: 20px; */
+  /* border-radius: 50%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-end; */
+  /* background-color: #fff; */
+}
+
+a.play .play-img {
+  /* position: absolute; */
+  height: 40px;
+  width: 150px;
+  /* right: 1px; */
+  transform: translate(10%);
+  /* color: #0171d3; */
+  /* font-size: 20px; */
+  /* border-radius: 50%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: #fff; */
+}
+
+.mokap {
+  width: 90px;
+}
+
+@media screen and (max-width: 1010px) {
+  .container2 img {
+    display: none;
+  }
+
+  .container .swiper {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 915px) {
+  .container2 img {
+    display: none;
+  }
+
+  .container .swiper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+      url(/assets/img/finger1.jpg);
+    background-size: cover;
+  }
+
+  .container .swiper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 375px;
+    width: 350px;
+    width: 330px;
+  }
+
+  .container2 img {
+    display: none;
+  }
+
+  .container .swiper {
+    display: none;
+  }
+
+  /* .form {
+    width: 360px;
+  } */
+
+  .logo-bolmut {
+    width: 375px;
+    width: 350px;
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  a.play .play-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(30%);
+  }
+
+  a.apss .apss-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(60%);
+  }
+
+  .container .swiper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  a.play .play-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(30%);
+  }
+
+  a.apss .apss-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(50%);
+  }
+
+  .container .swiper {
+    display: none;
+  }
+}
