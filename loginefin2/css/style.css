@@ -42,6 +42,7 @@ body {
   width: 270px;
   top: -60px;
   left: 450px;
+
 }
 
 .container .swiper-slide img {
@@ -339,12 +340,25 @@ a.play .play-img {
 @media screen and (max-width: 850px) {
   body {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-      url(/img/finger1.jpg);
+      url(../img/luke-paris-km3QVgymekE-unsplash.jpg);
     background-size: cover;
+    object-fit: cover;
   }
 
   .container .swiper {
     display: none;
+  }
+
+  a.play .play-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(60%);
+  }
+
+  a.apss .apss-img {
+    height: 30px;
+    width: 100px;
+    transform: translate(90%);
   }
 }
 
@@ -396,16 +410,26 @@ a.play .play-img {
   a.play .play-img {
     height: 30px;
     width: 100px;
-    transform: translate(30%);
+    transform: translate(20%);
   }
 
   a.apss .apss-img {
     height: 30px;
     width: 100px;
-    transform: translate(50%);
+    transform: translate(60%);
   }
 
   .container .swiper {
     display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 96%;
+  }
+
+  a.play .play-img {
+    margin-left: -25px;
   }
 }
